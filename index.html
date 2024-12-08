@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Request</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f9f9f9;
+        }
+        .form-container {
+            width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .form-container h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .form-container label {
+            font-weight: bold;
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .form-container input, .form-container button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .form-container input[type="checkbox"],
+        .form-container input[type="radio"] {
+            width: auto;
+            margin-right: 10px;
+        }
+        .form-container button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .form-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Software Request</h1>
+        <form>
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="employee-id">Employee ID *</label>
+            <input type="text" id="employee-id" name="employee-id" required>
+
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mobile">Mobile No / Extn.No</label>
+            <input type="text" id="mobile" name="mobile">
+
+            <label>Which software do you require? *</label>
+            <input type="checkbox" id="software-a" name="software" value="A">
+            <label for="software-a">Software A</label><br>
+            <input type="checkbox" id="software-b" name="software" value="B">
+            <label for="software-b">Software B</label><br>
+            <input type="checkbox" id="software-c" name="software" value="C">
+            <label for="software-c">Software C</label>
+
+            <label>How urgently do you need it? *</label>
+            <input type="radio" id="urgent" name="urgency" value="urgent" required>
+            <label for="urgent">As soon as possible</label><br>
+            <input type="radio" id="within-weeks" name="urgency" value="weeks">
+            <label for="within-weeks">Within 2 to 3 weeks</label><br>
+            <input type="radio" id="no-hurry" name="urgency" value="no-hurry">
+            <label for="no-hurry">I'm in no hurry</label>
+
+            <button type="submit">Request</button>
+        </form>
+    </div>
+</body>
+</html>
